@@ -15,6 +15,6 @@ for num in range(1, 10000):
         if num % factor == 0:
             result += factor
             if factor > 1 and num // factor != factor:
-                result += num // factor
+                result += num // factor   #here we are adding another factor of the current factor
     if result == num:
         print(num)
